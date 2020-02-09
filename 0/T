@@ -45,8 +45,9 @@ boundaryField
     }
     wall
     {
-        type            fixedValue;
-        value           uniform 293;
+        type            inletOutlet;
+        inletValue      $internalField;
+        value           $internalField;
     }
 }
 
